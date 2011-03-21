@@ -2,6 +2,6 @@ from settings import *
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
-INSTALLED_APP += (
+INSTALLED_APPS += (
     'gunicorn',
 )
