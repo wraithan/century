@@ -45,8 +45,7 @@ def install_requirements():
 
 def start_gunicorn():
     with virtualenv():
-        run('gunicorn_django --pid=' + deploy_dir +
-            '/gunicorn.pid --workers=2 -b 127.0.0.1:8020 --daemon deploy_settings.py')
+        run('./manage.py gunicorn -c conf/gunicorn.py --settings=deploy_settings')
 
 def stop_gunicorn():
     with cd(deploy_dir):
