@@ -45,7 +45,7 @@ def install_requirements():
 
 def start_gunicorn():
     with virtualenv():
-        run('./manage.py run_gunicorn -c conf/gunicorn.py')
+        run('./manage.py run_gunicorn -c conf/gunicorn.py --settings=deploy_settings')
 
 def stop_gunicorn():
     with cd(deploy_dir):
