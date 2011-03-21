@@ -40,6 +40,11 @@ def git_pull():
 
 def install_requirements():
     with virtualenv():
+        run('pip install -r deploy-requirements.txt')
+
+
+def upgrade_requirements():
+    with virtualenv():
         run('pip install --upgrade -r deploy-requirements.txt')
 
 
