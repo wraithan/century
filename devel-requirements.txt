@@ -1,0 +1,6 @@
+-r common-requirements.txt
+ipython
+ipdb
+django-extensions
+django-debug-toolbar
+fabric
