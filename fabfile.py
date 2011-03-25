@@ -12,10 +12,6 @@ def virtualenv():
         with prefix(activate):
             yield
 
-def virtualenv_local(cmd):
-    local('source /home/wraithan/.virtualenvs/%s/bin/activate && %s' %s (project_name, cmd))
-
-
 def deploy():
     git_pull()
     install_requirements()
