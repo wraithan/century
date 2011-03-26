@@ -1,4 +1,4 @@
--e git+https://github.com/django/django.git#egg=Django-dev
+django
 psycopg2
 south
 django_selector
